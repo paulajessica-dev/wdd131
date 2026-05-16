@@ -2,12 +2,134 @@ body {
 	font-family: "Sansita", sans-serif;
 }
 
-/* mobile **************************/
 header {
-	background-color: #bbb;
+	background-color: #01034f;
+	padding: 10px;
+	color: white;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+main h1 {
+	color: #01034f;
+	text-align: center;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.open a {
+	display: block;
+}
+
+.navigation {
+	display: none;
+	list-style: none;
+	padding: 1rem;
+}
+
+.navigation.open {
+	display: block;
+}
+
+.navigation a {
+	display: block;	
+	color: white;
+	padding: 0.5rem;
+	transition: background-color 0.3s ease;
+}
+
+
+.navigation a:hover {
+	color: #c6e9f4;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+h2 {
+	text-align: center;
+}
+
+.gallery {
 	display: grid;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+}
+
+figure {
+	margin: 0;
+	text-align: center;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+figcaption {
+	margin-top: 0.5rem;
+	color: #01034f;
+}
+
+footer {
+    background-color: #01034f;
+    text-align: center;
+    padding: 0.5rem;
+	color: white;
+
+}
+
+@media (min-width: 640px) {
+
+	header {
+		display: flex;
+		align-items: center;
+	}
+
+	.top {
+		display: flex;
+		align-items: center;
+	}
+
+	nav {
+		margin-left: auto;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		gap: 1.5rem;
+		padding: 0;
+	}
+
+	#menu {
+		display: none;
+	}
+
+
 }
