@@ -33,7 +33,7 @@ header{
 }
 
 header h1{
-    font-size: clamp(0.7rem, 5vw, 1.5rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 body{
@@ -66,6 +66,11 @@ body{
     text-align: center;
     line-height: 1.6;
     backdrop-filter: blur(5px);
+    transition: all .3s ease;
+}
+
+.card:hover{
+    transform: translateY(-3px);
 }
 
 .card h2{    
@@ -74,7 +79,7 @@ body{
     justify-content: center;
     font-size: clamp(1rem, 3vw, 1.1rem);
     background-color: var(--accentclear);
-    width: 100%;
+    width: calc(100% + 20px);
     margin-left: -20px;
     margin-top: -10px;
     margin-bottom: .5rem;
@@ -104,7 +109,7 @@ body{
 .card p{   
     display: flex;
     justify-content: center;
-    gap: 10px
+    gap: 10px;
   }
 
 footer{
@@ -117,8 +122,8 @@ footer{
 
 @media (min-width: 768px){
 
-    .container{
-        position: relative;
+      img{
+        max-width: 100%;
     }
 
     .card{
@@ -129,7 +134,7 @@ footer{
 
     .card h2{
       font-size: 1rem;
-      justify-content: left;
+      justify-content: flex-start;
       margin-left: -20px;
       margin-top: -10px;
       margin-bottom: .5rem;
@@ -141,14 +146,13 @@ footer{
       color: var(--gray);
     }
 
-    .weather-card h2{      
+    .weather-card h2{  
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
 
-    .weather-icon{
-      
+    .weather-icon{      
       width: 40px;
       height: 40px;
       flex-shrink: 0;
