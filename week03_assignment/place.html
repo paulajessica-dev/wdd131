@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wdd 131 - Beaches Album</title>
+    <meta name="description" content="Temple Album activity.">
+    <meta name="author" content="Paula Jessica Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/place.css">
+    
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Maldivas Beach</h1>            
+        </div>
+    </header>
+    <main class="container">
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/maldivas-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/maldivas-medium.webp" media="(min-width: 550px)">
+                <img src="images/maldivas-small.webp" alt="Maldivas Beach">
+            </picture>
+        </section>
+                <section class="card data-card">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 298 km²</p>
+            <p><strong>Population:</strong> 521,000</p>
+            <p><strong>Capital:</strong> Malé</p>
+            <p><strong>Language:</strong> Dhivehi</p>
+            <p><strong>Currency:</strong> Rufiyaa</p>
+        </section>     
+        <section class="card weather-card">
+            <h2>Weather 
+                <span class="weather-icon">⛅</span>
+            </h2>
+
+            <p>Temperature: <span id="temperature"></span>°C</p>
+            <p>Wind Speed: <span id="windspeed"></span> km/h</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+    </section>
+    </main>
+        <footer>
+         <p>
+            ©<span id="currentyear"></span>
+            🌺 Paula Jessica Silva 🌺
+            Fortaleza, Ceará
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
