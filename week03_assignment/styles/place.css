@@ -1,5 +1,5 @@
 :root {  
-  --primary: #0088cc; 
+  --primary: #005f99; 
   --secondary: #00b4d8;
   --accent: #e8c978; 
   --accentclear: #f4e9cb; 
@@ -11,7 +11,7 @@
   --white: #ffffff;
   --light: #f8f9fa;
   --gray-light: #dee2e6;
-  --gray: #424344;
+  --gray: #1b263b;
   --dark: #1b263b;
   --glass: rgba(255, 255, 255, 0.7);
   --shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -40,10 +40,16 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--seafoamclear);
     min-height: 100vh;
+    color: var(--dark);
 }
 
 .container{
     position: relative;
+}
+
+a:focus,
+button:focus{
+    outline: 3px solid #000;
 }
 
 .hero img{
@@ -122,7 +128,7 @@ footer{
     color: var(--white);
     text-align: center;
     padding: .8rem;
-    font-size: clamp(.5rem, 3vw, .8rem);
+    font-size: clamp(1rem, 3vw, 1.1rem);
 }
 
 @media (min-width: 768px){
