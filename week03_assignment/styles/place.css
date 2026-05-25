@@ -124,11 +124,11 @@ button:focus{
   }
 
 footer{
-    background-color: var(--primary);
+    background-color: #004b78;
     color: var(--white);
     text-align: center;
     padding: .8rem;
-    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-size: clamp(.9rem, 3vw, 1rem);
 }
 
 @media (min-width: 768px){
