@@ -112,11 +112,6 @@ button:focus{
     margin: auto;
 }
 
-.title::before{
-      content: "🌴"; 
-      margin-left: 10px;
-}
-
 .card p{   
     display: flex;
     justify-content: center;
@@ -182,6 +177,11 @@ footer{
         bottom: 40px;
         right: 30px;
         width: 250px;
+    }
+
+    .title::before{
+        content: "🌴"; 
+        margin-left: 10px;
     }
 
 }
