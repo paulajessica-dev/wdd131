@@ -106,7 +106,7 @@ oldTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples.filter(temple => {
       const year = parseInt(temple.dedicated.split(",")[0]);
-      return year < 1900;
+      return year < 2000;
     }));
 
 });
@@ -128,7 +128,7 @@ largeTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples.filter(temple => {
       const area = temple.area;
-      return area >= 90000;
+      return area > 90000;
     }));
 
 });
@@ -139,7 +139,7 @@ smallTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples.filter(temple => {
       const area = temple.area;
-      return area <= 10000;
+      return area < 10000;
     }));
 
 });
