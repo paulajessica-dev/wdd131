@@ -86,22 +86,32 @@ h2 {
 	gap: 1rem;
 }
 
-figure {
-	margin: 0;
-	text-align: center;
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);	
+	
 }
 
-figure img {
-	width: 80%;
-	height: 100px;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+.card img {
+    width: 80%;
+    height: 160px;
+	border-radius: 5px;	
+    object-fit: cover;
+	padding-bottom: 0.3rem;
 }
 
-figcaption {
-	margin-top: 0.5rem;
-	color: #01034f;
+.card p {
+    padding-bottom: 0.5rem;
+	margin: auto;
+	font-size: clamp(.8rem, 2vw, .8rem);
 }
+
+
 
 footer {
     background-color: #01034f;
