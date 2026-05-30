@@ -155,7 +155,7 @@ homeTempleLink.addEventListener("click", () => {
 function createCard(templesList){
     document.querySelector("#gallery").innerHTML = "";
     const gallery = document.querySelector("#gallery");
-    console.log(gallery);
+    //console.log(gallery);
     templesList.forEach(temple => {
       const card = document.createElement("section");
       card.classList.add("card");
