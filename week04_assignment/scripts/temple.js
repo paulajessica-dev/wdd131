@@ -102,7 +102,7 @@ createCard(temples);
 
 const oldTempleLink = document.querySelector("#old");
 
-oldTempleLink.addEventListener("click", () => {
+oldTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples.filter(temple => {
       const year = parseInt(temple.dedicated.split(",")[0]);
@@ -113,7 +113,7 @@ oldTempleLink.addEventListener("click", () => {
 
 const newTempleLink = document.querySelector("#new");
 
-newTempleLink.addEventListener("click", () => {
+newTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples.filter(temple => {
       const year = parseInt(temple.dedicated.split(",")[0]);
@@ -124,7 +124,7 @@ newTempleLink.addEventListener("click", () => {
 
 const largeTempleLink = document.querySelector("#large");
 
-largeTempleLink.addEventListener("click", () => {
+largeTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples.filter(temple => {
       const area = temple.area;
@@ -135,7 +135,7 @@ largeTempleLink.addEventListener("click", () => {
 
 const smallTempleLink = document.querySelector("#small");
 
-smallTempleLink.addEventListener("click", () => {
+smallTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples.filter(temple => {
       const area = temple.area;
@@ -146,7 +146,7 @@ smallTempleLink.addEventListener("click", () => {
 
 const homeTempleLink = document.querySelector("#home");
 
-homeTempleLink.addEventListener("click", () => {
+homeTempleLink.addEventListener("click", (event) => {
       event.preventDefault();
       createCard(temples);
 
